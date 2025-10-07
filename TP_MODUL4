@@ -1,0 +1,153 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.tp_modu4;
+
+/**
+ *
+ * @author ASUS
+ */
+
+class Dokter {
+    private String n;
+    private String s;
+    
+    
+    public Dokter(String nama, String spesialis) {
+        this.n = nama;
+        this.s = spesialis;
+    }
+    
+   
+    public String getNama() {
+        return n;
+    }
+    
+    public String getSpesialis() {
+        return s;
+    }
+    
+    
+    public void setNama(String nama) {
+        this.n = nama;
+    }
+    
+    public void setSpesialis(String spesialis) {
+        this.s = spesialis;
+    }
+}
+
+// Class Pasien
+class Pasien {
+    private String n;
+    private int u;
+    
+    // Constructor
+    public Pasien(String nama, int umur) {
+        this.n = nama;
+        this.u = umur;
+    }
+    
+    // Getter
+    public String getNama() {
+        return n;
+    }
+    
+    public int getUmur() {
+        return u;
+    }
+    
+    // Setter
+    public void setNama(String nama) {
+        this.n = nama;
+    }
+    
+    public void setUmur(int umur) {
+        this.u = umur;
+    }
+}
+
+
+class Pemesanan {
+    private Dokter d;
+    private Pasien p;
+    private String h;
+    
+    
+    public Pemesanan(Dokter dokter, Pasien pasien, String hari) {
+        this.d = dokter;
+        this.p = pasien;
+        this.h = hari;
+    }
+    
+    
+    public Dokter getDokter() {
+        return d;
+    }
+    
+    public Pasien getPasien() {
+        return p;
+    }
+    
+    public String getHari() {
+        return h;
+    }
+    
+    
+    public void setDokter(Dokter dokter) {
+        this.d = dokter;
+    }
+    
+    public void setPasien(Pasien pasien) {
+        this.p = pasien;
+    }
+    
+    public void setHari(String hari) {
+        this.h = hari;
+    }
+    
+    
+    public void tampilkanInfo() {
+        System.out.println("Dokter: " + d.getNama() + 
+                         " (" + d.getSpesialis() + ")");
+        System.out.println("Pasien: " + p.getNama() + 
+                         " (Umur: " + p.getUmur() + " tahun)");
+        System.out.println("Hari: " + h);
+        System.out.println("----------------------------------------");
+    }
+}
+
+
+public class TP_MODU4 {
+    public static void main(String[] args) {
+        Dokter dt1 = new Dokter("a", "Mata");
+        Dokter dt2 = new Dokter("b", "Gigi");
+        Dokter dt3 = new Dokter("c", "Telinga");
+        
+
+        Pasien ps1 = new Pasien("x", 20);
+        Pasien ps2 = new Pasien("y", 37);
+        Pasien ps3 = new Pasien("w", 55);
+        
+        Pemesanan[] daftarPemesanan = new Pemesanan[5];
+        
+  
+        daftarPemesanan[0] = new Pemesanan(dt1, ps1, "Selasa");
+        daftarPemesanan[1] = new Pemesanan(dt2, ps1, "Kamis");
+        daftarPemesanan[2] = new Pemesanan(dt2, ps2, "Selasa");
+        daftarPemesanan[3] = new Pemesanan(dt3, ps2, "Jumat");
+        daftarPemesanan[4] = new Pemesanan(dt1, ps3, "Senin");
+        
+        
+        System.out.println("========================================");
+        System.out.println("     DAFTAR PEMESANAN DOKTER");
+        System.out.println("========================================");
+        
+        for (int i = 0; i < daftarPemesanan.length; i++) {
+            System.out.println("Pemesanan #" + (i + 1));
+            daftarPemesanan[i].tampilkanInfo();
+        }
+        
+    }
+}
