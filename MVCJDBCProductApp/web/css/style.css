@@ -1,0 +1,106 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 12 Dec 2025, 15.28.36
+    Author     : ASUS
+*/
+/* Tema BIRU Profesional - Mirip Nur Alifia tapi warna biru */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #333;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 850px;
+    margin: 20px auto;
+    box-shadow: 0 10px 30px rgba(33, 150, 243, 0.25);
+    border: 1px solid #bbdefb;
+}
+
+h2 {
+    text-align: center;
+    color: #1976d2;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+button, input[type="submit"], .btn {
+    background: #1976d2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px 0;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #1565c0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(25, 118, 210, 0.4);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px;
+    border: 2px solid #bbdefb;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #1976d2;
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #1976d2;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+td {
+    padding: 14px;
+    text-align: center;
+    background: #f5fbff;
+    border-bottom: 1px solid #bbdefb;
+}
+
+tr:hover td { background: #e3f2fd; }
+
+.message { background: #c8e6c9; color: #2e7d32; padding: 12px; border-radius: 10px; text-align: center; margin: 15px 0; }
+.error   { background: #ffcdd2; color: #c62828; padding: 12px; border-radius: 10px; text-align: center; margin: 15px 0; }
+
+a { color: #1976d2; text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; }
+
+.btn-small { padding: 6px 12px; border-radius: 20px; font-size: 14px; margin: 0 4px; }
+.btn-edit { background: #42a5f5; }
+.btn-delete { background: #ef5350; color: white; }
+
+@media (max-width: 600px) {
+    .card { padding: 20px; margin: 10px; }
+}
