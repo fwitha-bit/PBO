@@ -2,16 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/MVCJDBCProductApp/web/index.jsp</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/MVCJDBCProductApp/web/views/form_product.jsp</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/MVCJDBCProductApp/web/views/home.jsp</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/MVCJDBCProductApp/web/views/list_product.jsp</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/MVCJDBCProductApp/web/views/manage_category.jsp</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/MVCJDBCProductApp/web/views/view_custom.jsp</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/MVCJDBCProductApp/src/java/controllers/HomeServlet.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/MVCJDBCProductApp/src/java/controllers/ProductServlet.java</file>
-            <file>file:/C:/Users/ASUS/Documents/NetBeansProjects/MVCJDBCProductApp/src/java/models/Product.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
